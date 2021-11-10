@@ -1,6 +1,9 @@
-public interface IStack<T>
-{
-    bool IsEmpty();
-    T Pop();
-    void Push(T element);
+namespace Structures.Stack
+{    
+    public interface IStack<T>
+    {
+        bool IsEmpty();
+        T Pop();
+        void Push(T element);
+    }
 }
