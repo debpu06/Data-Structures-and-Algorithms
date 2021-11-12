@@ -9,8 +9,11 @@ namespace Blog
             // var stackTest = new StackTest();
             // stackTest.Test();
 
-            var observerTest = new ObserverPatternTest();
-            observerTest.Test();
+            // var observerTest = new ObserverPatternTest();
+            // observerTest.Test();
+
+            // var decoratorTest = new DecoratorTest();
+            // decoratorTest.Test();
 
         }
     }
