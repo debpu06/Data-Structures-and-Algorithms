@@ -1,9 +1,9 @@
 using System;
 using Patterns.Decorator;
 
-public class DecoratorTest
+public class DecoratorTest : ITest
 {
-    public void Test()
+    public void Run()
     {
         Tree tree = new Tree();
         tree = new LightsDecorator(tree);

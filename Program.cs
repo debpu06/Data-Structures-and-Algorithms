@@ -6,15 +6,13 @@ namespace Blog
     {
         static void Main(string[] args)
         {
-            // var stackTest = new StackTest();
-            // stackTest.Test();
-
-            // var observerTest = new ObserverPatternTest();
-            // observerTest.Test();
-
-            // var decoratorTest = new DecoratorTest();
-            // decoratorTest.Test();
-
+            ITest test;
+            test = new StackTest();
+            test.Run();
+            test = new ObserverPatternTest();
+            test.Run();
+            test = new DecoratorTest();
+            test.Run();
         }
     }
 }

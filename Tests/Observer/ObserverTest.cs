@@ -2,9 +2,9 @@
 using Patterns.Observer;
 using System;
 
-public class ObserverPatternTest
+public class ObserverPatternTest : ITest
 {
-    public void Test()
+    public void Run()
     {
         var observer1 = new TestObserver() { Name = "Observer 1" };
         var observer2 = new TestObserver() { Name = "Observer 2" };

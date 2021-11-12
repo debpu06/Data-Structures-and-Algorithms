@@ -1,8 +1,8 @@
 using System;
 using Structures.Stack;
-public class StackTest
+public class StackTest : ITest
 {
-    public void Test()
+    public void Run()
     {
         var testStack = new Stack<string>();
             var testNodeStack = new NodeStack<string>();
