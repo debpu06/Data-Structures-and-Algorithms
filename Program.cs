@@ -7,11 +7,13 @@ namespace Blog
         static void Main(string[] args)
         {
             ITest test;
-            test = new StackTest();
-            test.Run();
-            test = new ObserverPatternTest();
-            test.Run();
-            test = new DecoratorTest();
+            // test = new StackTest();
+            // test.Run();
+            // test = new ObserverPatternTest();
+            // test.Run();
+            // test = new DecoratorTest();
+            // test.Run();
+            test = new QueueTest();
             test.Run();
         }
     }

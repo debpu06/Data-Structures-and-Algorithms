@@ -4,7 +4,7 @@ namespace Structures.Stack
 {
     public class NodeStack<T> : IStack<T>
     {
-        private Node top;
+        private StackNode top;
         private int size = 0;
 
         public int Size => size;
@@ -16,7 +16,7 @@ namespace Structures.Stack
 
         //O(1)
         public void Push(T element){
-            Node node = new Node(element, top);
+            StackNode node = new StackNode(element, top);
             top = node;
             size++;
         }
@@ -28,21 +28,18 @@ namespace Structures.Stack
             else    
             {
                 var temp = top.Element;
-                top = top.Next;
+                top = (StackNode)top.Next;
                 size--;
 
                 return temp;
             }
         }
 
-        private class Node
+        private class StackNode : Node<T>
         {
-            public Node(T element, Node next){
-                this.Element = element;
+            public StackNode(T element, StackNode next) : base(element){
                 this.Next = next;
             }
-            public T Element { get;set; }
-            public Node Next { get;set; }
         }
     }
 }
