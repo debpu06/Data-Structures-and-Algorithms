@@ -24,10 +24,10 @@ namespace Structures.Stack
 
         //O(1)
         public void Push(T element){
-            top++;
             if(top > size)
                 throw new Exception("Stack Overflow");
             stack[top] = element;
+            top++;
         }
 
         //O(1)
@@ -37,7 +37,7 @@ namespace Structures.Stack
             else
             {
                 top--;
-                return stack[top + 1];
+                return stack[top];
             }
         }
     }
